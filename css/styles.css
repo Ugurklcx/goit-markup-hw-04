@@ -38,7 +38,6 @@ img {
 }
 
 body {
-  width: 1440px;
   margin: 0 auto;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -185,7 +184,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   opacity: 1.0;
-  opacity: 1.0;
 }
 
 .content-one {
@@ -200,6 +198,7 @@ body {
   list-style: none;
   text-align: center;
   display: flex;
+  margin: 0 auto;
 }
 
 .content-one-header {
@@ -341,26 +340,6 @@ body {
   color: var(--slate);
   text-align: center;
 }
-
-.icon-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 10px;
-  list-style-type: none;
-}
-
-.icon-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
-
-.icon-link:hover {
-  fill: #31d0aa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
-
 /* SECTION 4 */
 
 .content-four {
@@ -507,4 +486,27 @@ body {
 
 .footer-social-text {
   color: var(--white);
+}
+
+/*-------ICONS-------*/
+
+.icon-list { /*OUR TEAM ICONS LIST*/
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icon {
+  --color1: var(--iris);
+  --color5: var(--cloud);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.social-icon:hover {
+  --color1: var(--green);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
